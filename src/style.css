@@ -7,9 +7,22 @@
   border:none;
 }
 
+header img{
+
+    width: 320px;
+    height: 150px;
+    background-position:left;
+    
+  }
+
+div imagem {
+    justify-content: center;
+    top: 50px 
+  }
+
 body{
 
-    display: flex;
+    overflow-y: scroll; 
     justify-content: center;
     align-items: center;
     padding-top: 0;
@@ -21,7 +34,7 @@ body{
 }
 
 nav {
-
+    justify-content: center;
     background-color: #7524e2;
     height: 40px;
     padding:10px;
@@ -42,8 +55,19 @@ nav a:hover {
     color: #2AF519;
 }
 
-main {
-    padding: 50px;
+texto {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px    
 }
 
 footer {
@@ -56,3 +80,30 @@ footer {
     bottom: 0;
     width: 100%;
 }
+input {
+    color: black;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #7524e2;
+    border-radius: 5px;
+    position: relative;
+    top: 5px;  
+    margin: 10px 20px;
+}
+button {
+    background-color: #7524e2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 5px; 
+    margin: 20px 20px;
+  }
+  
+  button:hover {
+    background-color: #2AF519;
+
+  }
