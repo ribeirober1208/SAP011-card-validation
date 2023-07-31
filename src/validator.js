@@ -1,36 +1,32 @@
 const validator = {
 
-  
+
 
   isValid: function (validarCard) {
 
-    if (validarCard.length !== 16) {
-      return false;
-    }
-    
     const cardNumbers = validarCard.split('').map(Number);
-   
-    for (let i = 0; i < cardNumbers.length; i += 2) {
+
+    for (let i = 1; i < cardNumbers.length; i += 2) {
       cardNumbers[i] *= 2;
-    
+
       if (cardNumbers[i] > 9) {
         cardNumbers[i] -= 9;
 
 
       }
-      
-      const sum = cardNumbers.reduce((acc, curr) => acc + curr, 0);
-
-      if (sum % 10 === 0) {
-
-        return true;
-
-      } else {
-        return false;
-      }
-
-
     }
+    const sum = cardNumbers.reduce((acc, curr) => acc + curr, 0);
+    console.log("Numero ", validarCard, " sum ", sum, " cardNumber ", cardNumbers)
+    if (sum % 10 === 0) {
+
+      return true;
+
+    } else {
+      return false;
+    }
+
+
+
 
   },
 
@@ -48,7 +44,7 @@ const validator = {
 
   },
 
-  validarCvv: function (numeroCvv) {
+  segurancaCvv: function (numeroCvv) {
 
     if (/^[0-9]+$/.test(numeroCvv)) {
       return numeroCvv;
@@ -57,8 +53,8 @@ const validator = {
     }
   },
 
-  validarData: function (numeroData) {
-    
+  dataCard: function (numeroData) {
+
     if (/^\d{2}\/\d{4}$/.test(numeroData)) {
       const [mes, ano] = numeroData.split('/');
       const mesInt = parseInt(mes, 10);
@@ -66,22 +62,23 @@ const validator = {
 
       if (mesInt >= 1 && mesInt <= 12 && anoInt >= 1900) {
         return numeroData;
-      } else {  
-        resultado.mensagem = "Formato Inválido"
+      } else {
+        return "Formato Inválido"
+
       }
     }
   },
 
-  validarNome: function (nomeCliente) {
-  
+  nameClient: function (nomeCliente) {
+
     if (/^[a-zA-ZÀ-ÿ\s]+$/.test(nomeCliente)) {
       return nomeCliente;
     }
-  
-    return ""; 
+
+    return "";
   }
-  
-  
+
+
 };
 
 export default validator
