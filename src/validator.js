@@ -1,6 +1,6 @@
 const validator = {
 
-  // estudar array, funcion https://curriculum.laboratoria.la/pt/topics/javascript/arrays/arrays
+  
 
   isValid: function (validarCard) {
 

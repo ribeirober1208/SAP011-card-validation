@@ -2,7 +2,7 @@ import validator from './validator.js';
 
 
 console.log(validator);
-// estudar material variáveis https://curriculum.laboratoria.la/pt/topics/javascript/basics/variable
+
 
 document.getElementById("enviar").addEventListener("click", validarCard)
 document.getElementById("enviar").addEventListener("click", validarNome)
