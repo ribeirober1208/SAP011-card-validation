@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head> 
-    <meta charset="utf-8">
-    <title>Sua carteira digital</title>
-    <link rel="stylesheet" href="style.css" />
-    
-  </head>
 
-  <body> 
-    <header>
-      <figure class="header">
+<head>
+  <meta charset="utf-8">
+  <title>Sua carteira digital</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header>
+    <figure class="header">
       <img src="img/logoB.png" alt="Logo da Empresa">
-      </figure> 
+    </figure>
 
-     <div>
-     <nav class="nav">
-     <ul>
-     <a href="#">A MultBank</a>
-     <a href="#">Minha Carteira</a>
-     <a href="#">Novo Cartão</a>
-     </ul>
-     </nav>
-     </div> 
-     </header>
-     <main>
+    <div>
+      <nav class="nav">
+        <ul>
+          <a href="#">A MultBank</a>
+          <a href="#">Minha Carteira</a>
+          <a href="#">Novo Cartão</a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="box">
       <form class="Texto">
-      <h4>A MultBank veio inovar no mundo digital!</h4>
-      <hr>
-      <p>Todas as formas de pagamento </p>
-      <p>na palma da mão, no seu celular.</p>  
-      <br>
-      <p>
-      <li>Fácil de usar</li>
-      <li>Organize seus pagamentos</li>
-      <li>Todos os seus cartões no celular</li>
-      <li>Pague por aproximação</li>
-      <li>Segurança por digital</li>
-      </form> 
+        <h4>A MultBank veio inovar no mundo digital!</h4>
+        <hr>
+        <p>Todas as formas de pagamento </p>
+        <p>na palma da mão, no seu celular.</p>
+        <br>
+        <p>
+          <li>Fácil de usar</li>
+          <li>Organize seus pagamentos</li>
+          <li>Todos os seus cartões no celular</li>
+          <li>Pague por aproximação</li>
+          <li>Segurança por digital</li>
+    </div>
+    </form>
 
-      <div class="imagem">
-      <img src="img/master.png" alt="Master Card">
-      <p id="mascarado"></p>
-      </div>
-        <form class="input">
-          
-          <p><input type="text" id="numero" maxlength="16" placeholder="0000 0000 0000 0000"></p>
-          <hr>
-          <p><input type="text" id="nome" placeholder="Seu nome"></p>
-          <hr>
-          <p><input type="text" id="validade" placeholder="00 / 0000 "></p>
-          <hr>
-          <p><input type="text" id="cvv" maxlength="3" placeholder="CVV"></p>  
-          <hr>
-          <button id="enviar" >Cadastrar</button>
-          <button type="reset">Reset</button>
-          
-          <hr>
-        </form>     
-        
-      </main> 
-             
-      <footer class="footer">
-        @multbank by Alessandra Ribeiro
-      </footer>  
-      <script src="index.js" type="module"></script>    
-  </body>
-  
+    <div class="container">
+      <form>
+        <img src="img/master.png" alt="Master Card">
+        <div class="info">
+          <p id="mascarado"></p>
+          <p id="nomeCartao"></p>
+          <p id="dataValidade"></p>
+          <p id="numeroCvv"></p>
+        </div>
+      </form>
+    </div>
+    <form class="input">
+
+      <p><input type="text" id="numero" maxlength="16" placeholder="0000 0000 0000 0000"></p>
+      <hr>
+      <p><input type="text" id="nome" placeholder="Seu nome"></p>
+      <hr>
+      <p><input type="text" id="validade" maxlength="7" placeholder="00/0000"></p>
+      <hr>
+      <p><input type="text" id="cvv" maxlength="3" placeholder="CVV"></p>
+      <hr>
+      <button id="enviar">Cadastrar</button>
+      <button type="reset">Reset</button>
+
+      <hr>
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    @multbank by Alessandra Ribeiro
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
