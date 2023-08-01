@@ -91,28 +91,25 @@ nav ul {
 nav a:hover {
 
     color: #2AF519;
+    
 }
-/*
+
 .box {
     border: 1px solid #ccc;
-    padding: 20px;
-    width: 300px;
-    margin: 0 auto;
     border-radius: 10px;
 }
 
 .Texto {
-    font-family: Arial, sans-serif;
-    color: #960ac0;
-}*/
+    margin: 15px;
+    
+}
 
 main {
     display: flex;
     justify-content: center;
     position: relative;
-    top: 50px
+    top: 50px 
 }
-
 footer {
     background-color: #7524e2;
     padding: 30px;

@@ -25,9 +25,6 @@ const validator = {
       return false;
     }
 
-
-
-
   },
 
   maskify: function (numero) {
