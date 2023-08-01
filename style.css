@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(243, 243, 247);
+    border: none;
+    width: center;
+}
+
+header img {
+
+    width: 320px;
+    height: 150px;
+    background-position: right;
+    margin-left: 60px;
+
+}
+
+.container {
+
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+}
+
+.container p {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  
+}
+
+.info {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+    text-align: left;
+}
+
+.info p {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 1px 10px;
+    margin-block-start: 5px;
+}
+
+#mascarado {
+    position: relative;
+    font-size: 20px;
+    align-items: first baseline;
+}
+
+body {
+
+    overflow-y: scroll;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    background-color: #2a0759;
+    background-position-y: -100px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+nav {
+    justify-content: center;
+    background-color: #7524e2;
+    height: 35px;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav a:hover {
+
+    color: #2AF519;
+    
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.Texto {
+    margin: 15px;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px 
+}
+footer {
+    background-color: #7524e2;
+    padding: 30px;
+    text-align: right;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+input {
+    color: black;
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #7524e2;
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+    margin: 10px 20px;
+}
+
+button {
+    background-color: #7524e2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 5px;
+    margin: 20px 20px;
+}
+
+button:hover {
+    background-color: #2AF519;
+
+}
