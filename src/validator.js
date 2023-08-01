@@ -4,20 +4,20 @@ const validator = {
 
   isValid: function (validarCard) {
 
-    const cardNumbers = validarCard.split('').map(Number);
+    const cardNumbers = validarCard.split('').map(Number); //array guarda valores em uma sequência
 
-    for (let i = 1; i < cardNumbers.length; i += 2) {
-      cardNumbers[i] *= 2;
+    for (let i = 1; i < cardNumbers.length; i += 2) { // loop dois em dois
+      cardNumbers[i] *= 2; // multiplicando i por dois
 
-      if (cardNumbers[i] > 9) {
-        cardNumbers[i] -= 9;
+      if (cardNumbers[i] > 9) { // se for menor que 9
+        cardNumbers[i] -= 9; // se for maior que 9 (dois digitos), subtrai por 9
 
 
       }
     }
     const sum = cardNumbers.reduce((acc, curr) => acc + curr, 0);
     console.log("Numero ", validarCard, " sum ", sum, " cardNumber ", cardNumbers)
-    if (sum % 10 === 0) {
+    if (sum % 10 === 0) { //multiplica a soma por 10
 
       return true;
 
