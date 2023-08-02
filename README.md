@@ -45,3 +45,9 @@ Fácil de usar
    * incluir mais páginas
    * mais funcionalidades
    * mudar as bandeiras daas operadoras
+
+## 7. Contato
+   
+   Vamos nos conectar:
+
+  <a href= "https://www.linkedin.com/in/alessandra-ribeiro-a99080a4/ " > Alessandra Ribeiro </a>
