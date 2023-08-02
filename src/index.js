@@ -9,6 +9,7 @@ document.getElementById('numero').addEventListener("input", maskify)
 document.getElementById('cvv').addEventListener("input", validarCvv)
 document.getElementById('nome').addEventListener("input", validarNome)
 document.getElementById('validade').addEventListener("input", validarData)
+document.getElementById('reset').addEventListener("click", reset)
 
 function validarCard(event) {
   event.preventDefault();
@@ -56,6 +57,17 @@ function maskify( ) {
   const numeroMascarado = validator.maskify(numeroCard);
   cartaoMascarado.innerHTML = numeroMascarado;
   console.log('mascara');
+
+}
+function reset() {
+  const mascarado = document.getElementById("mascarado");
+  const nomeCartao = document.getElementById("nomeCartao");
+  const dataValidade = document.getElementById("dataValidade");
+  const numeroCvv = document.getElementById("numeroCvv");
+  mascarado.innerHTML="";
+  nomeCartao.innerHTML="";
+  dataValidade.innerHTML="";
+  numeroCvv.innerHTML="";
 
 }
 
