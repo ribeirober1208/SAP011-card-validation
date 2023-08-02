@@ -50,4 +50,4 @@ Fácil de usar
    
    Vamos nos conectar:
 
-  <a href= "https://www.linkedin.com/in/alessandra-ribeiro-a99080a4/ " > Alessandra Ribeiro </a>
+  Linkedin: <a href= "https://www.linkedin.com/in/alessandra-ribeiro-a99080a4/ " > Alessandra Ribeiro </a>
